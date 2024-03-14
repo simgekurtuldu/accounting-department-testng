@@ -12,7 +12,7 @@ public class CalculateTest {
 
     @Test(dataProvider = "credentials")
         public void testCalculate(String employeeName, int numberOfDaysWorked, int dailyWage){
-            Calculate calculate1 = new Calculate("Simge", 5, 200);
+            Calculate calculate1 = new Calculate("Simge", 30, 200);
             Assert.assertEquals(calculate1.getEmployeeName(),employeeName);
             Assert.assertEquals(calculate1.getNumberOfDaysWorked(),numberOfDaysWorked);
             Assert.assertEquals(calculate1.getDailyWage(),dailyWage);
@@ -20,8 +20,9 @@ public class CalculateTest {
     @DataProvider (name="credentials")
     public Object[][] credentials(){
         return new Object[][]{
-                {"Simge",5,200},
-                {"Simge",5,100}
+                {"Simge",30,200},
+                {"Simge",30,100},
+                {"Ayse",2,350}
         };
     }
 }
