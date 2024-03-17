@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Calculate Test Suite">
+    <test name="Unit Test">
+        <classes>
+            <class name="CalculateTest"/>
+        </classes>
+    </test>
+    </suite>
